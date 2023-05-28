@@ -22,15 +22,6 @@ body {
     font-family: supergood;
 }
 
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 95vh;
-
-    overflow: hidden;
-
-}
-
 .hidden{
     display: none;   
 }
@@ -71,6 +62,12 @@ body {
     width: 100%;
 }
 
+.bg {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+}
+
 .bg-video {
     height: 100%;
     width: 100%;
@@ -82,13 +79,16 @@ body {
     object-fit: fill;
 }
 
-.right {
+
+
+.rite {
+    position: relative;
+    z-index: 4000;
     font-family: sans-serif;
     font-size: 1.2rem;
     margin-top: 1rem;
     text-align: center;
 }
-
 
 @media only screen and (max-width: 900px) {
     .bg-video{
@@ -195,8 +195,6 @@ body {
         width: 100%;
         height: 100vh;
         
-
-        visibility: hidden;
         opacity: 0;
         background-color: white;
 
@@ -219,13 +217,12 @@ body {
     }
 
     .nav__checkbox:checked~.nav-con {
-        visibility: visible;
         opacity: 1;
         top: 0;
     }
 
     .nav-item {
-        
+        border: none;
         position: relative;
         z-index: 2000;
     }
@@ -234,9 +231,7 @@ body {
     :visited {
         font-size: 2rem;
         color: inherit;
-    }
-
-    
+    }    
 
     .medias {
         display: block;
@@ -264,13 +259,8 @@ body {
         z-index: 2;
     }
 
-
     .bg-img {
         display: block;
-
-        position: absolute;
-        top: 3rem;
-        z-index: 0;
         width: 100%;
         height: 100%;
     }

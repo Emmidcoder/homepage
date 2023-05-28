@@ -29,7 +29,8 @@ body {
 .nav-con{
     position: absolute;
     top: 2rem;
-    left: 32rem;
+    left: 55%;
+    transform: translateX(-50%);
     width: 90rem;
     z-index: 2000;
 }
